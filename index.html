@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/game.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="menu">
+    <img src="assets/logo.svg" alt="">
+    <div class="player-pick box-shadow">
+      <p>PICK PLAYER 1'S MARK</p>
+      <div class="mark-button-box">
+        <button class="mark-button x-mark-button"><img src="assets/icon-x-black.svg" alt=""></button>
+        <button class="mark-button o-mark-button"><img src="assets/icon-o-grey.svg" alt=""></button>
+      </div>
+
+      <p class="notice">REMEMBER : X GOES FIRST</p>
+    </div>
+    <button class="js-cpu-game game-button orange-button">NEW GAME (VS CPU)</button>
+    <button class="js-multiplayer-game game-button blue-button">NEW GAME (VS PLAYER)</button>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

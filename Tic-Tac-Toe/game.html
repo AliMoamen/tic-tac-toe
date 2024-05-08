@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/game.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="game">
+    <div class="game-header">
+      <img src="assets/logo.svg" class="game-logo" alt="logo.svg">
+      <div class="turn-box">
+        <img src="assets/icon-x-grey.svg" class="player-turn">
+        <div>
+          <p>TURN</p>
+        </div>
+
+      </div>
+      <div><button class="restart-button"><img src="assets/icon-restart.svg" alt="icon-restart.svg"></button></div>
+    </div>
+    <div class="game-board">
+      <button class="move-box move-box-11"></button>
+      <button class="move-box move-box-12"></button>
+      <button class="move-box move-box-13"></button>
+      <button class="move-box move-box-21"></button>
+      <button class="move-box move-box-22"></button>
+      <button class="move-box move-box-23"></button>
+      <button class="move-box move-box-31"></button>
+      <button class="move-box move-box-32"></button>
+      <button class="move-box move-box-33"></button>
+    </div>
+    <div class="game-score">
+      <div class="x-box score-box">
+        <div class="score-label-x score-label">X (You)</div>
+        <div>
+          <p class="x-score score-number">0</p>
+        </div>
+      </div>
+      <div class="tie-box score-box">
+        <div class="score-label">TIES</div>
+        <div>
+          <p class="ties-score score-number">0</p>
+        </div>
+      </div>
+      <div class="o-box score-box">
+        <div class="score-label-o score-label">O (CPU)</div>
+        <div>
+          <p class="score-label-o o-score score-number">0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/game.js"></script>
+
+</body>
+
+</html>
